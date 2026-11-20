@@ -14,7 +14,7 @@
 
 | Homepage | Tournament Detail & Registration |
 | :---: | :---: |
-| ![Homepage](./img/screenshots/shutout-project-homepage.jpg) | ![Feature Page](./img/screenshots/shutout-project-feature-content-tab.png) |
+| ![Homepage](./img/screenshots/shutout-project-homepage.jpg) | ![Feature Page](./img/screenshots/shutout-project-feature-content-tab.jpg) |
 
 ---
 
