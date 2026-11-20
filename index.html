@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Autcharaporn Chailangka">
+    <title>Shutout</title>
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/homepage-style.css">
+
+    <!-- Font Awesome Link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css' integrity='sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==' crossorigin='anonymous'/>
+    <!-- Link SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html"><img src="img/icon/logo.svg" alt="Shutout Logo"></a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Tournaments</a></li>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <a href="#">Login</a>
+                <a href="#" class="button solid-btn">Sign up</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- BODY -->
+    <main>
+
+        <!-- BANNER -->
+        <section class="banner-section" id="hero-banner-section">
+            <div class="banner-container">
+                <div class="banner-content">
+                    <h1 class="banner-head">ศูนย์รวมการแข่งขัน<br><span class="hero-highlight">E-Sport</span></h1>
+                    <p>ค้นหาและสมัครเข้าร่วมการแข่งขันอีสปอร์ตที่คุณสนใจได้ทันที รองรับการแข่งขันทั้งสำหรับผู้เล่นเดี่ยวและประเภททีม นอกจากนี้ยังเปิดพื้นที่ให้คุณสามารถสร้างและจัดการทัวร์นาเมนต์ของคุณเองได้อย่างมืออาชีพ แพลตฟอร์มของเรา รองรับเกมยอดนิยมระดับประเทศ พร้อมเปิดให้บริการฟรีโดยไม่มีค่าใช้จ่าย</p>
+                    <div class="banner-content-bottom">
+                        <a href="#" class="button solid-btn">สมัครสมาชิก</a>
+                        <a href="#" class="view-all-tournament">
+                            <p>การแข่งขันทั้งหมด</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEARCH -->
+        <section id="search-section">
+            <h3 class="search-title">ค้นหารายการแข่ง</h3>
+            <div class="filter-tournament">
+                <form>
+                    <fieldset>
+                        <div class="filter-search">
+                            <div class="filter-wrapper">
+                                <select name="filter-game" id="filter-game">
+                                        <option value="none">เลือกเกมที่ต้องการ</option>
+                                        <option value="apex-legends">Apex Legends</option>
+                                        <option value="dota2">Dota 2</option>
+                                        <option value="freefire">Garena : Free Fire</option>
+                                        <option value="lol">League of Legends</option>
+                                        <option value="mlbb">Mobile Legends: Bang Bang</option>
+                                        <option value="pubg">PUBG: Battlegrounds</option>
+                                        <option value="pubg-mobile">PUBG: Mobile</option>
+                                        <option value="rov">RoV : Arena of Valor</option>
+                                        <option value="valorant">Valorant</option>
+                                </select>
+                                <select name="filter-place" id="filter-place">
+                                        <option value="none">เลือกรูปแบบสถานที่จัดแข่ง</option>
+                                        <option value="onsite">สถานที่จริง</option>
+                                        <option value="online">ออนไลน์</option>
+                                </select>
+                                <select name="filter-price" id="filter-price">
+                                        <option value="none">เลือกรูปแบบค่าใช้จ่าย</option>
+                                        <option value="free">ฟรี</option>
+                                        <option value="paid">มีค่าใช้จ่าย</option>
+                                </select>
+                                <select name="filter-available" id="filter-available">
+                                        <option value="none">เลือกสถานะการแข่ง</option>
+                                        <option value="available">เปิดกำลังมา</option>
+                                        <option value="ongoing">กำลังแข่ง</option>
+                                        <option value="unavailable">จบการแข่งแล้ว</option>
+                                        <option value="coming-soon">กำลังมา</option>
+                                </select>
+                            </div>
+                            <div class="search-wrapper">
+                                <div class="search-box">
+                                    <i class="fa-brands fa-sistrix"></i>
+                                    <input type="search" name="search-bar" id="search-bar" placeholder="กำลังมองหารายการแข่งอะไรหรอ?">
+                                </div>
+                                <button type="submit" class="solid-btn">
+                                    <i class="fa-brands fa-sistrix"></i>
+                                    ค้นหา
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+         
+        <!-- TOURNAMENT CARDS -->
+        <!-- RECENT CARDS -->
+        <section class="card-section" id="recent-tournament-section">
+
+            <div class="hidden-box">
+                <div class="hidden-box-left"></div>
+                <div class="hidden-box-right"></div>
+            </div>
+            
+            <div class="card-section-container">
+                <div class="title-card-section">
+                    <h3>การแข่งขันในช่วงนี้</h3>
+                    <a href="#" class="view-all">ดูทั้งหมด</a>
+                </div>
+
+                <div class="card-container swiper swiper-3-card">
+                    <div class="swiper-wrapper">
+                        <div class="card swiper-slide">
+                                <div class="card-status available">รับสมัคร</div>
+                                <a href="#" class="card-img"><img src="img/game-img/rov/1-rov-qualifier_720x960.jpg" alt="True5G RoV Tournament 2026 (เชียงใหม่) in Recent Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/rov/RoV_logo.png" alt="ROV Logo">
+                                        <a href="#" class="card-tournament-title">True5G RoV Tournament 2026 (เชียงใหม่)</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>30/9/2026 - 9/10/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>ไม่ระบุ</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>1,000,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>MAYA Lifestyle Shopping Center</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย TRUE</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                        <a href="#" class="button solid-btn">สมัครแข่ง</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">รับสมัคร</div>
+                                <a href="feature.html" class="card-img"><img src="img/game-img/pubg/786890849_1745006246744940_4633348701149758697_n.jpg" alt="PUBG THAILAND SERIES 2026 : PHASE 2 in Recent Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/pubg/28-287228_pubg-white-logo-pubg-logo-white-png-transparent.png" alt="PUBG Logo">
+                                        <a href="feature.html" class="card-tournament-title">PUBG THAILAND SERIES 2026 : PHASE 2</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>21/9/2026 - 6/10/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>128 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>975,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ไม่ระบุ</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย Attacker Clan</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="feature.html" class="button box-btn">ดูรายละเอียด</a>
+                                        <a href="feature.html#page-register" class="button solid-btn">สมัครแข่ง</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">รับสมัคร</div>
+                                <a href="#" class="card-img"><img src="img/game-img/pubg/746350993_1336530478076714_3309565891602870789_n.png" alt="PUBG Mobile Pro League - Thailand 2026 Fall in Recent Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/pubg/img-logo3.png" alt="PUBG Logo">
+                                        <a href="#" class="card-tournament-title">PUBG Mobile Pro League - Thailand 2026 Fall</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>8/9/2026 - 24/9/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>20 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>1,500,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ไม่ระบุ</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย KRAFTON, Level Infinite</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                        <a href="#" class="button solid-btn">สมัครแข่ง</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">รับสมัคร</div>
+                                <a href="#" class="card-img"><img src="img/game-img/freefire/image_feature.jpg" alt="FREE FIRE Phenix E-SPORT CHAMPIONSHIP in Recent Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/freefire/FF_SHORT_LOGO.PNG.png" alt="Freefire Logo">
+                                        <a href="#" class="card-tournament-title">FREE FIRE Phenix E-SPORT CHAMPIONSHIP</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>15/9/2026 - 20/9/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>8 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>30,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ออนไลน์</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย PlugFight Studio</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                        <a href="#" class="button solid-btn">สมัครแข่ง</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">รับสมัคร</div>
+                                <a href="#" class="card-img"><img src="img/game-img/mlbb/6c529ff7becdf962c9521c9a9362b8f6.jpg" alt="Mobile Legends: Bang Bang (MLBB) Super League Thailand in Recent Card"></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/mlbb/mobile-legends-seeklogo.png" alt="MLBB Logo">
+                                        <a href="#" class="card-tournament-title">Mobile Legends: Bang Bang (MLBB) Super League Thailand</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>11/9/2026 - 18/10/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>8 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>3,000,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>Moonton, GCN</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย TRUE</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                        <a href="#" class="button solid-btn">สมัครแข่ง</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-nav-button">
+                    <div class="swiper-slide-button swiper-3-btn-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-slide-button swiper-3-btn-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    </div>
+                    <div class="swiper-3-pagination"></div>
+                    </div>
+            </div>
+            
+        </section>
+
+        <!-- COMING SOON CARDS -->
+        <section class="card-section" id="coming-tournament-section">
+
+            <div class="hidden-box">
+                <div class="hidden-box-left"></div>
+                <div class="hidden-box-right"></div>
+            </div>
+            
+            <div class="card-section-container">
+                <div class="title-card-section">
+                    <h3>การแข่งขันที่ใกล้มาถึง</h3>
+                    <a href="#" class="view-all">ดูทั้งหมด</a>
+                </div>
+
+                <div class="card-container swiper swiper-4-card">
+                    <div class="swiper-wrapper">
+                        <div class="card swiper-slide">
+                                <div class="card-status available">กำลังมา</div>
+                                <a href="#" class="card-img"><img src="img/game-img/pubg/image_feature(2).jpg" alt="PUBG Mobile WORLD HOBBY FEST#13 in Coming Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/pubg/img-logo3.png" alt="PUBG Logo">
+                                        <a href="#" class="card-tournament-title">PUBG Mobile WORLD HOBBY FEST#13</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>28/9/2026 - 1/10/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>20 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>30,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ออนไลน์</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย PlugFight Studio</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">กำลังมา</div>
+                                <a href="#" class="card-img"><img src="img/game-img/rov/ef621c13-2c88-45fe-8f5a-42a621d1e083.png" alt="RoV Pro League 2026 Winter in Coming Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/rov/RoV_logo.png" alt="ROV Logo">
+                                        <a href="#" class="card-tournament-title">RoV Pro League 2026 Winter</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>22/10/2026 - 25/11/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>9 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>10,250,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>Garena Esports Studio</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย Garena Thailand</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">กำลังมา</div>
+                                <a href="#" class="card-img"><img src="img/game-img/apex/capsule_616x353.jpg" alt="FPSThailand Apex Legends Community Cup #7 in Coming Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/apex/image4.png" alt="Apex Legends Logo">
+                                        <a href="#" class="card-tournament-title">FPSThailand Apex Legends Community Cup #7</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>17/10/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>20 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>5,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ออนไลน์</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย FPSThailand</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">กำลังมา</div>
+                                <a href="#" class="card-img"><img src="img/game-img/rov/image_feature(1).jpg" alt="Grayden Tournaments SS8 in Coming Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/rov/RoV_logo.png" alt="ROV Logo">
+                                        <a href="#" class="card-tournament-title">Grayden Tournaments SS8</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>5/11/2026 - 15/11/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>32 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>1,500</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ออนไลน์</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย ɢʟᴏʀʏ • Cᴀ͜͡ɴᴅʏˎˊ˗</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">กำลังมา</div>
+                                <a href="#" class="card-img"><img src="img/game-img/lol/96b4049c1588cb1386bbdd9d7f165ca48a39ac1d-1920x1080.avif" alt="Thailand Open Tournament 2026: Stand Your Ground in Coming Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/lol/lol-logo-rendered-hi-res.png" alt="LOL Logo">
+                                        <a href="#" class="card-tournament-title">Thailand Open Tournament 2026: Stand Your Ground</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>19/11/2026 - 28/12/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>ไม่จำกัด</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>250,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ออนไลน์</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย Riot Games</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">กำลังมา</div>
+                                <a href="#" class="card-img"><img src="img/game-img/mlbb/2-mlbb-qualifier_720x960.jpg" alt="True5G MLBB Tournament 2026 (ทั้งประเทศ) in Coming Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/mlbb/mobile-legends-seeklogo.png" alt="MLBB Logo">
+                                        <a href="#" class="card-tournament-title">True5G MLBB Tournament 2026 (ทั้งประเทศ)</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>31/10/2026 - 1/12/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>ไม่ระบุ</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>500,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ออนไลน์</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย TRUE</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <div class="card-status available">กำลังมา</div>
+                                <a href="#" class="card-img"><img src="img/game-img/valorant/LNY_Sage-3_NightMarket.jpg" alt="VALORANT : Griffon Tournament 2026 #5 in Coming Card" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <img src="img/game-img/valorant/LogoWallpapers/VALORANT_Logo_V_thumbnail.jpg" alt="Valorant Logo">
+                                        <a href="#" class="card-tournament-title">VALORANT : Griffon Tournament 2026 #5</a>
+                                    </div>
+                                    <div class="card-detail-container">
+                                        <div class="card-detail-date card-detail-content">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            <p>11/11/2026 - 15/11/2026</p>
+                                        </div>
+                                        <div class="card-half-detail-content">
+                                            <div class="card-detail-player card-detail-content">
+                                                <i class="fa-solid fa-user-group"></i>
+                                                <p>8 ทีม</p>
+                                            </div>
+                                            <div class="card-detail-prize card-detail-content">
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p>10,000</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-detail-locate card-detail-content">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p>ออนไลน์</p>
+                                        </div>
+                                        <p class="card-detail-content">โดย Griffon Studio</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="#" class="button box-btn">ดูรายละเอียด</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-nav-button">
+                    <div class="swiper-slide-button swiper-4-btn-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-slide-button swiper-4-btn-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    </div>
+                    <div class="swiper-4-pagination"></div>
+                    </div>
+            </div>
+            
+        </section>
+
+        <!-- CREATE TOURNAMENT BANNER SECTION -->
+         <section class="banner-section" id="create-tournament-banner-section">
+
+            <div class="banner-container">
+                <div class="banner-content">
+                    <h1 class="banner-head">สร้างและจัดการ<br>การแข่งขันของคุณ</h1>
+                    <p>แพลตฟอร์มของเรารองรับการจัดการแข่งขันที่ออกแบบมาเพื่อลดความซ้ำซ้อน ควบคุมทุกขั้นตอนได้ ครบจบในที่เดียว ตั้งแต่การกำหนดกติกา เปิดรับสมัคร ตรวจสอบรายชื่อ ไปจนถึงการยืนยันผลการแข่ง มอบประสบการณ์ที่ราบรื่นทั้งผู้จัดและผู้เข้าแข่งขัน</p>
+                    <div class="banner-content-bottom">
+                        <a href="#" class="button solid-btn">สร้างการแข่งขัน</a>
+                        <a href="#" class="view-all-tournament">
+                            <p>ขั้นตอนการสร้างการแข่งขัน</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+
+         <!-- NEWS SECTION -->
+          <section class="card-section" id="news-section">
+            <div class="hidden-box">
+                <div class="hidden-box-left"></div>
+                <div class="hidden-box-right"></div>
+            </div>
+            
+            <div class="card-section-container">
+                <div class="title-card-section">
+                    <h3>ข่าวสาร</h3>
+                    <a href="#" class="view-all">ดูทั้งหมด</a>
+                </div>
+
+                <div class="card-container swiper swiper-3-card">
+                    <div class="swiper-wrapper">
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/1.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">18/9/2026</p>
+                                        <a href="#" class="card-news-title">โรแบร์โต้ คาร์ลอส บุกไทยร่วมฉลอง 3 ปี EA SPORTS FC Mobile</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/2.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">7/8/2026</p>
+                                        <a href="#" class="card-news-title">เลอโนโว เสริมทัพ Esports World Cup 2026 ในฐานะ Founding Partner</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/3.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">27/7/2026 - 9/10/2026</p>
+                                        <a href="#" class="card-news-title">รูนี่ย์ ร่วมงาน eFootball ที่ไทย! KONAMI เปิดตัวพากย์ไทย-ปิยะพงษ์ Legend</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/4.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">21/7/2026</p>
+                                        <a href="#" class="card-news-title">สมาคมอีสปอร์ตจับมือเกษมบัณฑิตเซ็น MOU ดึงสปอร์ตไซน์ลุยมหาวิทยาลัย</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/5.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">19/7/2026</p>
+                                        <a href="#" class="card-news-title">สรุปผลการแข่งขัน BANGKOK ESPORTS 2026 ชิงชัย 3 เกมใหญ่สุดมันส์</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/6.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">18/7/2026</p>
+                                        <a href="#" class="card-news-title">กทม. จับมือ อีสปอร์ตไทย เปิดศึก BANGKOK ESPORTS 2026 ชิงเงินกว่า 3.3 แสนบาท</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/7.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">17/7/2026</p>
+                                        <a href="#" class="card-news-title">เปิดตัว TERO Esports ดึง เดอะเวิลด์ ล่าแชมป์ FC ONLINE โปรลีก</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card swiper-slide">
+                                <a href="#" class="card-img"><img src="img/game-img/news/8.jpg" alt="News Card Image" ></a>
+                                <div class="card-detail">
+                                    <div class="card-top-content">
+                                        <p class="card-detail-date">17/7/2026</p>
+                                        <a href="#" class="card-news-title">Riot Games เปิดตัว League of Legends Classic ย้อนยุค 29 ก.ค. นี้</a>
+                                    </div>
+                                    <div class="news-bottom-content">
+                                        <p class="card-detail-by">โดย siamsport</p>
+                                        <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-nav-button">
+                    <div class="swiper-slide-button swiper-3-btn-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-slide-button swiper-3-btn-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    </div>
+                    <div class="swiper-3-pagination"></div>
+                    </div>
+            </div>
+          </section>
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-top-content">
+                <div class="footer-about">
+                    <img src="img/icon/logo.png" alt="Shutout Logo">
+                    <p>Shutout เราเชื่อว่าเกมเมอร์ทุกคนควรมีเวทีในการแสดง ศักยภาพของตน แพลตฟอร์มของเราเปิดกว้างให้ทุกคน สามารถค้นหา สมัครเข้าแข่งขันหรือสร้างทัวร์นาเมนต์เองได้ เพื่อสร้างพื้นที่สำหรับคอมมูนิตี้ เกมเมอร์ที่แข็งแกร่ง</p>
+                </div>
+                <div class="footer-quick-link">
+                    <div class="quick-link-menu">
+                        <p>เมนูหลัก</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Tournaments</a></li>
+                            <li><a href="#">Create</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick-link-contact">
+                        <p>ติดต่อเรา</p>
+                        <ul>
+                            <li><a href="#">ศูนย์ช่วยเหลือ</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">เกี่ยวกับเรา</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom-content">
+                <div class="footer-policy">
+                        <div class="policy-list">
+                            <a href="#">นโยบายความเป็นส่วนตัว</a>
+                            <p>|</p>
+                            <a href="#">ข้อตกลงและเงื่อนไข</a>
+                            <p>|</p>
+                            <a href="#">การตั้งค่าคุกกี้</a>
+                        </div>
+                        <p>© 2026, Shutout. All rights reserved</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+        
+
+    <!-- Link SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <!-- Linking Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

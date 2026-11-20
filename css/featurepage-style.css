@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || GENERALS */
+main {
+    position: relative;
+    min-height: 1520px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+label {
+    width: 100%;
+    font-size: var(--fs-p);
+    font-weight: var(--fw-bold);
+    color: var(--light-color);
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg2-color);
+    border: var(--border-solid);
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.line-limit,
+.line-limit-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.line-limit-2 {
+    -webkit-line-clamp: 2;
+}
+
+button:disabled,
+.button:disabled {
+    background-color: var(--grey-color) !important;
+    pointer-events: none !important;
+}
+
+button:disabled.registration-link {
+    background-color: var(--grey-color) !important;
+    pointer-events: none !important;
+
+}
+
+
+
+/* || FEATURE CONTAINER */
+.feature-container {
+    width: 100%;
+    height: auto;
+    padding: 80px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bg-game-img img {
+    width: 100%;
+    height: 420px;
+    position: absolute;
+    z-index: -1;
+    object-fit:cover;
+    object-position: top;
+}
+
+
+
+/* || OVERALL CARD */
+.overall-box {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg2-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-solid);
+    border-radius: 5px;
+    padding: 50px;
+    gap: 70px;
+} 
+
+.overall-box img {
+    width: 280px;
+    height: 370px;
+    border-radius: 5px;
+    object-fit: fill;
+}
+
+.overall-content-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.overall-detail {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.overall-detail-content {
+    display: grid;
+    grid-template-columns: auto auto auto; /* 3 columns */
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+.detail-label {
+    color: var(--grey-color);
+}
+
+.detail-text {
+    font-size: var(--fs-p-title);
+    
+}
+
+.detail-text-2 {
+    font-size: var(--fs-p-title);
+    height: 52px;
+}
+
+.bottom-content .button,
+.bottom-form-container .button {
+    height: 65px;
+    font-size: var(--fs-p-title);
+    font-weight: var(--fw-bold);
+}
+
+
+
+/* || TABS */
+.tab-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-container button {
+    width: 25%;
+    height: 50px;
+    background-color: var(--bg-color);
+    color: var(--light-color);
+    border: var(--border-solid);
+    border-radius: 0;
+}
+
+.tab-container button:first-child {
+    border-radius: 5px 0 0 5px; /* top-left, bottom left */
+}
+
+.tab-container button:last-child {
+    border-radius: 0 5px 5px 0; /* top-right, bottom right */
+}
+
+.tab-container button:hover,
+.tab-box.active {
+    cursor: pointer;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    transition: .25s ease-in-out;
+}
+
+.tab-container button:active {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    transition: .1s ease-in-out;
+}
+
+
+
+/* || REGISTRATION TOURNAMENT FORM */
+.registration-tournament-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.registration-tournament-form .form-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/* || ABOUT TEAM FORM */
+.team-form-box {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    border: var(--border-solid);
+    border-radius: 5px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.representative-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+/* || PLAYER & COACH FORM */
+.highlight-title {
+    font-size: var(--fs-p-title);
+    font-weight: var(--fw-bold);
+    color: var(--secondary-color);
+}
+
+.highlight-text {
+    font-weight: var(--fw-bold);
+    color: var(--secondary-color);
+}
+
+.form-box-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* repeat 3 columns and 1 fraction/area of column in each box */
+    grid-auto-rows: 1fr; /* 1 fraction/area of row in each box */
+    gap: 20px;
+}
+
+.form-box {
+    width: 100%;
+    height: 100%;
+    border: var(--border-solid);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.add-box, .empty-box {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    border: var(--border-dashed);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#player-box .form-box{
+    background-color: var(--bg2-color);
+}
+
+#player-box .form-box input{
+    background-color: var(--bg-color);
+}
+
+#coach-box .form-box{
+    background-color: var(--bg-color);
+}
+
+#coach-box .form-box input{
+    background-color: var(--bg2-color);
+}
+
+.add-box .button {
+    width: auto;
+    height: 50px;
+}
+
+.add-box i {
+    font-size: var(--fs-icon-small);
+}
+
+.add-box .box-btn {
+    background-color: var(--bg-color);
+    font-weight: var(--fs-p);
+}
+
+.add-box .box-btn:hover {
+    background-color: var(--light-blue-color);
+    font-weight: var(--fs-p);
+}
+
+.add-box .box-btn:active {
+    background-color: var(--secondary-color);
+    font-weight: var(--fs-p);
+}
+
+
+
+/* || SIGN CONSENT CONTACT */
+.bottom-form-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consent-contact-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.consent-contact-container a:hover {
+    color: var(--light-blue-color);
+    text-decoration: underline;
+    transition: color .1s linear;
+}
+
+.consent-contact-container a:active {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transition: color .1s linear;
+}
+
+
+/* Radio button style */
+.feature-container input[type="radio"] {
+    appearance: none;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
+    color: currentColor;
+    accent-color: var(--light-color);
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+/* before is used to insert a circle inside radio button before style a radio */
+.feature-container input[type="radio"]::before {
+    content: ""; /* required because it use before */
+    width: 0.65em; /* 10px */
+    height: 0.65em; /* 10px */
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .1s transform ease-in-out;
+    box-shadow: inset 1em 1em var(--light-color); /* inset is shadow is appears inside the element, 1em 1em is X and Y axis that push shadow to cover inner area. */
+} 
+
+.feature-container input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+/* || EXTRA: TABS */
+.tab-content-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registered-team-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.registered-team-box {
+    width: 100%;
+    height: 75px;
+    background-color: var(--bg2-color);
+    font-weight: var(--fw-bold);
+    border: var(--border-solid);
+    border-radius: 5px;
+    align-content: center;
+    padding: 0 20px;
+}
+
+.empty-tab-state {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+}

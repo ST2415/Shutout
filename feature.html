@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutout</title>
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/homepage-style.css">
+    <link rel="stylesheet" href="css/featurepage-style.css">
+
+    <!-- Font Awesome Link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css' integrity='sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==' crossorigin='anonymous'/>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html"><img src="img/icon/logo.svg" alt="Shutout Logo"></a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Tournaments</a></li>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <a href="#">Login</a>
+                <a href="#" class="button solid-btn">Sign up</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- BODY -->
+    <main>
+
+        <div class="bg-game-img"><img src="img/game-img/pubg/images.jpg" alt="PUBG Background"></div>
+
+        <div class="feature-container">
+
+            <div class="overall-box">
+                <img src="img/game-img/pubg/786890849_1745006246744940_4633348701149758697_n.jpg" alt="PUBG THAILAND SERIES 2026 : PHASE 2 Tournament Poster" class="tournament-poster">
+                <div class="overall-content-container">
+                    <div class="overall-detail">
+                        <h2 class="tournament-name-content line-limit-2">PUBG THAILAND SERIES 2026 : PHASE 2</h2>
+                        <div class="overall-detail-content">
+                            <div class="detail" id="datetime">
+                                <p class="detail-label">ระยะเวลาแข่งขัน</p>
+                                <p class="detail-text-2">21 กันยายน - 6 ตุลาคม 2026</p>
+                            </div>
+                            <div class="detail" id="prize">
+                                <p class="detail-label">รางวัล</p>
+                                <p class="detail-text-2 line-limit-2">975,000 บาท</p>
+                            </div>
+                            <div class="detail" id="participants">
+                                <p class="detail-label">จำนวนผู้เข้าร่วม</p>
+                                <p class="detail-text line-limit">128 ทีม</p>
+                            </div>
+                            <div class="detail" id="place">
+                                <p class="detail-label">สถานที่</p>
+                                <p class="detail-text-2 line-limit-2 ">ไม่ระบุ</p>
+                            </div>
+                            <div class="detail" id="price">
+                                <p class="detail-label">รูปแบบค่าใช้จ่าย</p>
+                                <p class="detail-text line-limit">ฟรี</p>
+                            </div>
+                            <div class="detail" id="status">
+                                <p class="detail-label">สถานะ</p>
+                                <p class="detail-text line-limit">รับสมัคร</p>
+                            </div>
+                            <div class="detail" id="tournament-type">
+                                <p class="detail-label">รูปแบบของผู้จัด</p>
+                                <p class="detail-text line-limit">ทางการ</p>
+                            </div>
+                            <div class="detail" id="organizer">
+                                <p class="detail-label">โดย</p>
+                                <p class="detail-text-2 line-limit-2 ">Attacker Clan</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="bottom-content">
+                        <a href="#" class="button box-btn">วิธีสมัครแข่ง</a>
+                        <button class="button solid-btn tab-link" id="registration-link" onclick="activeFeatureTab(event, 'page-register')">สมัครแข่ง</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-container">
+                <button id="tab-detail" class="tab-box tab-link" onclick="activeFeatureTab(event, 'page-detail')">รายละเอียด</button>
+                <button id="tab-participant" class="tab-box tab-link" onclick="activeFeatureTab(event, 'page-participant')">ผู้เข้าร่วม</button>
+                <button id="tab-bracket" class="tab-box tab-link" onclick="activeFeatureTab(event, 'page-bracket')">ตารางแข่ง</button>
+                <button id="tab-result" class="tab-box tab-link" onclick="activeFeatureTab(event, 'page-result')">ผลลัพธ์</button>
+            </div>
+
+            <div class="tab-content-container game-content-select" id="page-detail">
+                <h3>รายละเอียด</h3>
+                <p>🎉เปิดรับสมัครแล้ว!  𝐏𝐔𝐁𝐆 𝐓𝐇𝐀𝐈𝐋𝐀𝐍𝐃 𝐒𝐄𝐑𝐈𝐄𝐒 𝟐𝟎𝟐𝟔 𝐏𝐡𝐚𝐬𝐞 𝟐♟️🏆<br>
+                ศูนย์รวมทีมแถวหน้าของประเทศไปสู่การชิงตั๋วสู่ระดับโลก<br>
+                📌📄สามารถสมัครได้ที่ลิงก์ด้านล่างนี้หรือสมัครกับทาง Shutout ได้เลย!<br>
+                https://forms.gle/xKNFLe36VwSDdox49<br>
+                <br>
+                🪂กำหนดการแข่งขัน<br>
+                📅 21 กันยายน – 6 ตุลาคม 2026<br>
+                🎖️ 24 ทีมที่ดีที่สุดในประเทศไทย<br>
+                💠PGC Points รวม 1345 Points<br>
+                💰Prize Pool รวมกว่า 975,000 บาท<br>
+                🪂PUBG THAILAND SERIES 2026 Phase 2<br>
+                ▪️รอบแบ่งกลุ่มสัปดาห์ที่ 1 วันที่ 21-23 กันยายน 2026<br>
+                ▪️รอบแบ่งกลุ่มสัปดาห์ที่ 2 วันที่ 25-27 กันยายน 2026<br>
+                🏆รอบ Grand Finals 1-6 ตุลาคม 2026<br>
+
+                🎥ช่องทางถ่ายทอดสดและคอนเทนต์ใหม่ ๆ<br>
+                🔵Facebook: <a href="https://www.facebook.com/pubg.battlegrounds.th">https://www.facebook.com/pubg.battlegrounds.th</a><br>
+                🟠 Instagram: <a href="https://www.instagram.com/pubg_battlegrounds_th/">https://www.instagram.com/pubg_battlegrounds_th/</a><br>
+                🔴Youtube: <a href="https://www.youtube.com/@PUBG_TH">https://www.youtube.com/@PUBG_TH</a><br>
+                ⚫️TikTok: <a href="https://www.tiktok.com/@pubgthailandofficial">https://www.tiktok.com/@pubgthailandofficial</a><br>
+                🟣Twitch: <a href="https://www.twitch.tv/pubgthailandofficial">https://www.twitch.tv/pubgthailandofficial</a><br>
+                🟢SOOP: <a href="https://www.sooplive.co.kr/station/pubgth">https://www.sooplive.co.kr/station/pubgth</a><br>
+                <br>
+                #พับจี #PUBG #KRAFTON #Battlegrounds #PUBGEsports #PTS  #AttackerClan  #TPP</p>
+            </div>
+
+            <div class="tab-content-container game-content-select" id="page-participant">
+                <h3>ผู้เข้าร่วม</h3>
+                <div class="registered-team-container">
+                    <div class="registered-team-box">nonentity_9</div>
+                    <div class="registered-team-box">whyt3r</div>
+                    <div class="registered-team-box">Bestoloch</div>
+                    <div class="registered-team-box">stars</div>
+                </div>
+            </div>
+
+            <div class="tab-content-container game-content-select" id="page-bracket">
+                <h3>ตารางแข่ง</h3>
+                <div class="empty-tab-state">
+                    <p>ยังไม่มีเนื้อหาในตาราง โปรดกลับมาใหม่ในภายหลัง</p>
+                </div>
+            </div>
+
+            <div class="tab-content-container game-content-select" id="page-result">
+                <h3>ผลลัพธ์</h3>
+                <div class="empty-tab-state">
+                    <p>ยังไม่มีเนื้อหาในตาราง โปรดกลับมาใหม่ในภายหลัง</p>
+                </div>
+            </div>
+
+            <div class="registration-tournament-form game-content-select" id="page-register">
+                <h3>ฟอร์มสมัครแข่ง</h3>
+                <form onsubmit="disableButton(event)">
+                    <fieldset>
+                        <div class="form-container about-team-form">
+                            <h4>ข้อมูลเกี่ยวกับทีม</h4>
+                            <div class="team-form-box">
+                                <div class="input-container">
+                                    <label for="team-name">ชื่อของทีม</label>
+                                    <input type="text" name="team-name" id="team-name">
+                                </div>
+                                <div class="representative-form">
+                                    <div class="input-container">
+                                        <label for="representative-name">ชื่อ-นามสกุลของผู้ที่สามารถติดต่อได้</label>
+                                        <input type="text" name="representative-name" id="representative-name">
+                                    </div>
+                                    <div class="input-container">  
+                                        <label for="representative-email">อีเมลของผู้ที่สามารถติดต่อได้</label>
+                                        <input type="email" name="representative-email" id="representative-email">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="representative-tel">เบอร์โทรของผู้ที่สามารถติดต่อได้</label>
+                                        <input type="tel" name="representative-tel" id="representative-tel">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-container player-form">
+                            <h4>ข้อมูลเกี่ยวกับสมาชิก<span class="highlight-text"> (*ขั้นต่ำ 4 คน)</span></h4>
+                            <div class="form-box-container" id="player-box">
+                                <div class="form-box" id="player-form-box">
+                                    <p class="highlight-title">สมาชิกคนที่ 1 (หัวหน้าทีม)</p>
+                                    <div class="input-container">
+                                        <label for="player-name">ชื่อ-นามสกุล</label>
+                                        <input type="text" name="player-name" id="player-name">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="player-in-game-name">ชื่อในเกม</label>
+                                        <input type="text" name="player-in-game-name" id="player-in-game-name">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="player-uid">รหัสผู้เล่น (UID)</label>
+                                        <input type="text" name="player-uid" id="player-uid">
+                                    </div>
+                                </div>
+                                <div class="add-box" id="player-add-box">
+                                    <button type="button" class="button solid-btn" onclick="addPlayer()"><i class="fa-solid fa-plus"></i>เพิ่มสมาชิก</button>
+                                    <button type="button" class="button box-btn"><i class="fa-solid fa-plus"></i>เพิ่มผู้เล่นสำรอง</button>
+                                </div>
+                                <div class="empty-box"></div>
+                                <div class="empty-box"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-container coach-form">
+                            <h4>ข้อมูลเกี่ยวกับโค้ชทีม <span class="highlight-text">(ถ้ามี และสูงสุด 2 คน)</span></h4>
+                            <div class="form-box-container" id="coach-box">
+                                <div class="form-box" id="coach-form-box" style="display: none;">
+                                    <p class="highlight-title">โค้ชคนที่ 1</p>
+                                    <div class="input-container">
+                                        <label for="coach-name">ชื่อ-นามสกุล</label>
+                                        <input type="text" name="coach-name" id="coach-name">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="coach-email">อีเมล</label>
+                                        <input type="email" name="coach-email" id="coach-email">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="coach-tel">เบอร์ติดต่อ</label>
+                                        <input type="tel" name="coach-tel" id="coach-tel">
+                                    </div>
+                                </div>
+                                <div class="add-box" id="coach-add-box">
+                                    <button type="button" class="button solid-btn" onclick="addCoach()"><i class="fa-solid fa-plus"></i>เพิ่มโค้ช</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-form-container">
+                            <div class="consent-contact-container">
+                                <input type="radio" name="sign-consent-contact" id="sign-consent-contact" required>
+                                <a href="#">ข้าพเจ้ายอมรับกติกาการแข่งขัน และยินยอมให้เว็บไซต์จัดเก็บข้อมูลส่วนบุคคลเพื่อใช้ในการจัดการแข่งขันและติดต่อประสานงานเท่านั้น*</a>
+                            </div>
+                            <button type="submit" class="button solid-btn">ยืนยันการสมัครแข่ง</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-top-content">
+                <div class="footer-about">
+                    <img src="img/icon/logo.png" alt="Shutout Logo">
+                    <p>Shutout เราเชื่อว่าเกมเมอร์ทุกคนควรมีเวทีในการแสดง ศักยภาพของตน แพลตฟอร์มของเราเปิดกว้างให้ทุกคน สามารถค้นหา สมัครเข้าแข่งขันหรือสร้างทัวร์นาเมนต์เองได้ เพื่อสร้างพื้นที่สำหรับคอมมูนิตี้ เกมเมอร์ที่แข็งแกร่ง</p>
+                </div>
+                <div class="footer-quick-link">
+                    <div class="quick-link-menu">
+                        <p>เมนูหลัก</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Tournaments</a></li>
+                            <li><a href="#">Create</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick-link-contact">
+                        <p>ติดต่อเรา</p>
+                        <ul>
+                            <li><a href="#">ศูนย์ช่วยเหลือ</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">เกี่ยวกับเรา</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom-content">
+                <div class="footer-policy">
+                        <div class="policy-list">
+                            <a href="#">นโยบายความเป็นส่วนตัว</a>
+                            <p>|</p>
+                            <a href="#">ข้อตกลงและเงื่อนไข</a>
+                            <p>|</p>
+                            <a href="#">การตั้งค่าคุกกี้</a>
+                        </div>
+                        <p>© 2026, Shutout. All rights reserved</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/feature-script.js"></script>
+
+</body>
+
+</html>
