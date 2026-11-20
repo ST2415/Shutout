@@ -56,4 +56,4 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/shutout.git
+   git clone https://github.com/ST2415/Shutout.git
