@@ -8,7 +8,7 @@
 
 ## 🌐 Live Demo & Screenshots
 
-* **Live Demo:** `[ใส่ลิงก์ GitHub Pages ของคุณที่นี่]`
+* **Live Demo:** ``
 * **Design System & Concept:** ดูรายละเอียดแนวคิดการออกแบบ โลโก้ และคู่สีได้ที่ [DESIGN.md](./DESIGN.md)
 * **Future Upgrade Plan:** ดูแผนการพัฒนาต่อยอดสู่ Full-Stack ได้ที่ [ROADMAP.md](./ROADMAP.md)
 
