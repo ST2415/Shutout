@@ -8,7 +8,7 @@
 
 ## 🌐 Live Demo & Screenshots
 
-* **Live Demo:** `https://st2415.github.io/Shutout/`
+* **Live Demo:** [Live Demo Link](https://st2415.github.io/Shutout/) (URL: https://st2415.github.io/Shutout/)
 * **Design System & Concept:** ดูรายละเอียดแนวคิดการออกแบบ โลโก้ และคู่สีได้ที่ [DESIGN.md](./DESIGN.md)
 * **Future Upgrade Plan:** ดูแผนการพัฒนาต่อยอดสู่ Full-Stack ได้ที่ [ROADMAP.md](./ROADMAP.md)
 
